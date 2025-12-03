@@ -1,18 +1,18 @@
 package com;
 
-import org.junit.Test;
-import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 public class CoeficienteATest {
 
     @Test
-    public void testCalcularA() {
-        var xs = Arrays.asList(0.0, 0.2, 0.4, 0.6, 0.8, 1.0);
-        var ys = Arrays.asList(0.0, -0.485, -0.996, -1.271, -1.494, -1.571);
+    public void testCalculoAConMisDatos() {
 
-        double A = CoeficienteA.calcularA(xs, ys);
+        double[] x = {0, 1, 3, 4, 5};
+        double[] y = {1, 2, 4, 5, 6};
 
-        assertEquals(-1.5938571428571422, A, 0.0001); // Ajusta el valor según resultado
+        double resultado = CoeficienteA.calcularA(x, y);
+
+        assertEquals(1.0, resultado, 0.0001);
     }
 }
