@@ -1,0 +1,16 @@
+RECOMENDACIONES 
+Recomendaciones sobre el Método de Mínimos Cuadrados
+1. Linealiza la ecuación antes de ajustar.
+2. Verifica que los puntos tengan tendencia lineal.
+3. Calcula pendiente e intercepto usando todos los datos disponibles.
+4. Incluye el error del instrumento en la tabla de datos.
+5. Muestra en la gráfica: puntos, recta ajustada y ecuación.
+
+Recomendaciones MAS (Movimiento Armónico Simple)
+
+1. Mantén la amplitud pequeña para que el movimiento sea realmente armónico.
+2. Repite las mediciones y usa el promedio del período.
+3. Usa siempre la relación 
+ω=2π/T para verificar tus datos.
+4. Mide desde el mismo punto de referencia para evitar errores.
+5. Evita fricción y movimientos bruscos al soltar el sistema.
