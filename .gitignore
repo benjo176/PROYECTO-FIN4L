@@ -1,3 +1,5 @@
-/target
-*.class
 
+*.class
+*.ctxt
+package.bluej
+/target
