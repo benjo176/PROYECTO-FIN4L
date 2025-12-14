@@ -1,0 +1,40 @@
+name: Maven CI
+
+on:
+  push:
+    branches: [ main, feature/mmc-code ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1️⃣ Clona tu repositorio
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # 2️⃣ Instala Java 17 (coincide con tu pom.xml)
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    # 3️⃣ Cache de dependencias Maven
+    - name: Cache Maven packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    # 4️⃣ Compilar proyecto
+    - name: Build
+      run: mvn clean compile
+
+    # 5️⃣ Ejecutar tests JUnit
+    - name: Run tests
+      run: mvn test

@@ -1,0 +1,43 @@
+informe
+MOVIMIENTO ARMONICO SIMPLE (MAS)
+FORMULAS 
+x(t) = A*cos (wt+Ø)
+x(t) = -A*cos (wt+Ø)
+ERRORES 
+Tabla 1
+Parámetros del MAS :
+ω = 3,14 ± 0,05 rad/s
+A = 0,51 ± 0,01 m
+T = 2,00 ± 0,03 s
+f = 0,50 ± 0,01 Hz
+Errores :
+Error relativo promedio en posición: 2,3%
+Error relativo promedio en velocidad: 4.1%
+Posición RMSE: 0,012 m
+Velocidad RMSE
+Tabla 2
+Parámetros del MAS:
+ω = 4,19 ± 0,07 rad/s
+A = 0,38 ± 0,01 m
+T = 1,50 ± 0,03 s
+f = 0,67 ± 0,01 Hz
+Errores :
+Error relativo promedio en posición: 3,1%
+Error relativo promedio en velocidad: 5.2%
+Posición RMSE: 0,012 m
+Velocidad RMSE: 0,032 m/s
+Tabla 3
+Parámetros del MAS :
+ω = 2,09 ± 0,04 rad/s
+A = 0,73 ± 0,02 m
+T = 3,00 ± 0,06 s
+f = 0,33 ± 0,01 Hz
+Errores :
+Error relativo promedio en pos
+Error relativo promedio en velocidad: 3.7%
+Posición RMSE: 0,013 m
+Velocidad RMSE: 0,027 m/s
+CONCLUSION
+Los datos coinciden para un movimiento armónico simple (MAS)
+La linearización de la relación v² vs x² permite determinar con precisión los parámetros fundamentales del Movimiento Armonico Simple  (ω y A).
+Los errores relativos son aceptables
