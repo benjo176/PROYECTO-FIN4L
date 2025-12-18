@@ -1,3 +1,14 @@
+# BlueJ
+*.class
+*.ctxt
+package.bluej
+
+# Maven
+/target/
+
+# IDEs
+.idea/
+.vscode/
 
 *.class
 *.ctxt
