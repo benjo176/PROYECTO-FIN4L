@@ -10,3 +10,7 @@ package.bluej
 .idea/
 .vscode/
 
+*.class
+*.ctxt
+package.bluej
+/target
